@@ -2,20 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.swiper {
+ 
+    border: none;
   }
-}
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }.kef {
+    animation: slider 10s infinite; 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @keyframes slider {
+    0% {
+      background-image: url('https://www.airnav.tj/uploads/posts/2024-04/1713929608_53674045399_5390ae0478_c.jpg');
+    }
+    50% {
+      background-image: url('https://maorif.tj/storage/images/efb28b38-e9f2-420f-a83b-44ae4f00e237q25.webp');
+    }
+    100% {
+      background-image: url('https://maorif.tj/storage/images/fbf1c884-ffac-4adb-939b-a632466c90b1q50.webp');
+    }
+  }
+  
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  .notice_date {
+    background-image: url('https://www.saglik.gov.tr/WebFiles/images/svg/notices.svg');
+    background-size: cover;
+    background-position: center;
+  }
+.notice_date {
+  float: left;
+  width: 120px;
+  height: 110px;
+  display: block;
+}
+.notice_date.default span.date_01 {
+  padding-top: 26px;
+}
+.notice_date span.date_01 {
+  display: block;
+  font-family: font_semi_bold;
+  font-size: 24px;
+  font-weight: 800;
+
+}
+.notice_date span {
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+.notice_date span.date_02 {
+  margin-top: -14px;
+  font-family: font_semi_bold;
+  font-size: 23px;
+  
+}
+.notice_date span {
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+.notice_date span.date_03 {
+  margin-top: -8px;
+  font-size: 13px;
+}
+.notice_date span {
+  display: block;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
 }
