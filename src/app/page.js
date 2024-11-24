@@ -259,7 +259,7 @@ export default function Home() {
                     <span className="date_03 text-xs">{el.date.split(' ')[2]}</span>
                   </div>
                   <div className="flex flex-col justify-center">
-                    <p className="font-bold text-lg">{el.desc}</p>
+                    <p className="font-[500] md:font-bold text-lg">{el.desc}</p>
                     <p className="max-w-[350px] text-[14px] text-[#44] mt-[7px]">{el.details}</p>
                   </div>
                 </div>
