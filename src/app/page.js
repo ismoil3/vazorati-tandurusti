@@ -446,7 +446,7 @@ export default function Home() {
               <li className="splide__slide flex items-center py-3 px-5 border border-[#365CDD] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide03" role="group" aria-roledescription="slide" aria-label="3 of 6">
                 <img className="w-[56px] h-[56px]" src="https://maorif.tj/storage/images/01J14MBQJ1CQN8A6SPVNRMR73T.png" alt="Logo" />
                 <a href="https://khovar.tj/rus/" className="text-sm line-clamp-4 font-semibold uppercase" tabIndex="-1">
-                  Агентии миллии иттилоотии Тоҷикистон "Ховар"
+                  Агентии миллии иттилоотии Тоҷикистон {"Ховар"}
                 </a>
               </li>
               {/* Slide 4 */}
@@ -531,7 +531,7 @@ export default function Home() {
               05.11.2024
             </span>
             <h3 className="mt-5 text-xl line-clamp-1">
-              ЭЪЛОН!!! Ба диққати масъулон ва довталабони даври чоруми озмуни ҷумҳуриявии "Фурӯғи субҳи доноӣ китоб аст"!
+              ЭЪЛОН!!! Ба диққати масъулон ва довталабони даври чоруми озмуни ҷумҳуриявии{ "Фурӯғи субҳи доноӣ китоб аст"}!
             </h3>
             <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
               ЭЪЛОН!!!
