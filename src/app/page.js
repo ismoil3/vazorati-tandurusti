@@ -23,6 +23,14 @@ export default function Home() {
       drag: 'free',
       focus: 'center',
       perPage: 3,
+      breakpoints: {
+        1024: {
+          perPage: 2,
+        },
+        600: {
+          perPage: 1,
+        },
+      },
       autoScroll: {
         speed: 1,
         pauseOnHover: true,
