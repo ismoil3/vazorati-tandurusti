@@ -42,62 +42,62 @@ export default function Home() {
     {
       id: '1',
       img: 'https://mfa.tj/uploads/berlin/2021/01/50877264236-4359ab6da2-o.jpg',
-      desc: 'Message of the President of the Republic of Tajikistan addressed to the Parliament',
-      date: '1 ноябре 2024'
+      desc: 'Паёми Президенти Ҷумҳурии Тоҷикистон, ки ба Маҷлиси Олӣ адрес гардидааст',
+      date: '1 ноябри 2024'
     },
     {
       id: '2',
       img: 'https://www.imoge.tj/media/k2/items/cache/661821a9442a8dbd824e89bd18c0fd2e_XL.jpg',
-      desc: 'Message from The President Of The Republic Of Tajikistan, The Leader Of The Nation',
-      date: '1 ноябре 2024'
+      desc: 'Паёми Президенти Ҷумҳурии Тоҷикистон, Пешвои Миллат',
+      date: '1 ноябри 2024'
     },
     {
       id: '3',
       img: 'https://lh6.googleusercontent.com/proxy/GHBAVpI-b0J2CwFOef8ZjeMA_JvU07vRbWjjH2Lt11HJby7VJ8SOqtFg5LeVP85FaA96Als4iET49Fx4KRyBgNEFAyTO6RMsYdJeu43IkYsW7JKCkcn9mJqAdx6ZUZvMCoj7OuMiCryPjD1jFg',
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     },
     {
       id: '4',
       img: `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`,
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     },
     {
       id: '5',
       img: `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`,
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     },
     {
       id: '6',
       img: `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`,
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     },
     {
       id: '7',
       img: `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`,
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     },
     {
       id: '8',
       img: `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`,
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     },
     {
       id: '9',
       img: `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`,
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     },
     {
       id: '10',
       img: `https://picsum.photos/300/200?random=${Math.floor(Math.random() * 1000)}`,
-      desc: 'President of the Republic of Tajikistan, Honorable Emomali Rahmon, received the Acting Chairman...',
-      date: '1 ноябре 2024'
+      desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
+      date: '1 ноябри 2024'
     }
   ];
   console.log(new Date());
@@ -223,7 +223,7 @@ export default function Home() {
                   clickable: true,
                 }}
                 modules={[Autoplay]}
-                className="mySwiper h-[300px] sm:h-[300px] md:h-[400px] rounded-[8px]"
+                className="mySwiper h-[370px] sm:h-[300px] md:h-[350px] rounded-[8px]"
               >
                 {news.map((el) => (
                   <SwiperSlide
@@ -234,7 +234,7 @@ export default function Home() {
                       src={el.img}
                       className="h-[55%] object-cover w-full rounded-t-[8px] transition-all duration-500 ease-in-out transform hover:scale-105"
                       alt="News image"
-                    />
+                    /><br/>
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-black text-start  via-transparent to-transparent">
                       <div className="px-6 py-4 w-full">
                         <p className="font-bold text-lg mb-4">{el.desc}</p>
@@ -267,7 +267,7 @@ export default function Home() {
             </div>
           </div>
 
-
+{/* ////////// */}
           <br /><br />
         </section>
 
@@ -521,10 +521,10 @@ export default function Home() {
               19.11.2024
             </span>
             <h3 className="mt-5 text-xl line-clamp-1">
-              REQUEST FOR EXPRESSION OF INTEREST. INDIVIDUAL CONSULTANT
+            ДАРХОС БАРОИ ИЗХОРОТИ МАНФИАТХО. МАШВАРАТЧИИ индивидуалй
             </h3>
             <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
-              REQUEST FOR EXPRESSION OF INTEREST
+            ДАРХОС БАРОИ ИЗХОРОТИ МАНФИАТХО
             </span>
             <Link
               href="#"
@@ -553,12 +553,7 @@ export default function Home() {
           </li>
         </ul>
 
-        <Link
-          href="#"
-          className="w-full py-4 border bg-[#1A3992] rounded-xl text-center font-semibold text-base text-white md:hidden"
-        >
-          Ҳамаи элонҳо
-        </Link>
+       
       </div>
     </section>
       </Container>

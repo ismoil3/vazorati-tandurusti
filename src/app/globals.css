@@ -70,7 +70,7 @@
   text-align: center;
 }
 .notice_date span.date_02 {
-  margin-top: -14px;
+  margin-top: 0px;
   font-family: font_semi_bold;
   font-size: 23px;
   
@@ -82,7 +82,7 @@
   text-align: center;
 }
 .notice_date span.date_03 {
-  margin-top: -8px;
+  margin-top: 0px;
   font-size: 13px;
 }
 .notice_date span {
