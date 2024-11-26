@@ -17,30 +17,30 @@ const Header = () => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [isPlaying, setIsPlaying] = useState(false);
 
-    
-      const openModal = (content) => {
+
+    const openModal = (content) => {
         setModalContent(content);
         setModalOpen(true);
-      };
-    
-      const closeModal = () => {
+    };
+
+    const closeModal = () => {
         setModalOpen(false);
         setModalContent(null);
-      };
-      const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
-    
-    
-      const toggleSound = () => {
+    };
+    const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+
+
+    const toggleSound = () => {
         const audio = document.getElementById("audio");
         if (isPlaying) {
-          audio.pause();
-          setIsPlaying(false);
+            audio.pause();
+            setIsPlaying(false);
         } else {
-          audio.play();
-          setIsPlaying(true);
-        }        
-      };
-    
+            audio.play();
+            setIsPlaying(true);
+        }
+    };
+
 
     const categories = [
         { id: 2, name: "Вазорат" },
@@ -85,7 +85,7 @@ const Header = () => {
         <div>
 
             <Container>
-                <div className=" flex justify-between items-center py-3 container z-10">
+                <div className=" flex justify-between items-center py-0 container z-10">
                     <ul className="flex">
                         {/* Герб Modal Trigger */}
                         <li>
@@ -117,7 +117,7 @@ const Header = () => {
                     <div className="flex gap-4 items-center">
                         {/* Phone Number */}
                         <a
-                            className="text-[#2D45A9] text-base gap-1 items-center hidden lg:flex"
+                            className="text-[#25ABB9] text-base gap-1 items-center hidden lg:flex"
                             href="tel:+9922277686"
                         >
                             <PhoneIcon fontSize="small" />
@@ -165,7 +165,7 @@ const Header = () => {
                             <button
                                 onClick={() => setLanguageMenuOpen(!languageMenuOpen)}
                                 className="relative flex items-center border-[#0068E21F] justify-between border text-[#6B7280]
-          h-9 w-9 text-left bg-white rounded-full cursor-default border-neutral-200/70
+          h-9 w-9 text-left bg-white rounded-full cursor-default  border-neutral-200/70
           focus:outline-none text-sm"
                             >
                                 <span className="truncate mx-auto">Ру</span>
@@ -247,53 +247,56 @@ const Header = () => {
                 </div>
             </Container>
 
-            <nav className="bg-gradient-to-r  hidden md:block from-blue-800 to-blue-600 shadow-lg">
-                <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-between h-16">
-                        
-                        {/* Categories Menu */}
-                        <ul className="flex space-x-8">
-                            {categories.map(({ id, name }) => (
-                                <li key={id} className="relative group">
-                                    {/* Category Menu Item */}
-                                    <button
-                                        onClick={() => toggleDropdown(id)} // Toggle dropdown for the clicked category
-                                        className={`text-white px-3 py-2 text-sm font-medium ${idx === id ? "underline font-bold" : "hover:bg-blue-700"
-                                            } transition-all duration-200 ease-in-out transform hover:scale-105`}
-                                        aria-expanded={idx === id}
-                                        aria-controls={`subcategories-${id}`}
-                                    >
-                                        {name}
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
+            <Container>
+                <nav className="bg-transparent items-center top-[50px]  absolute justify-center   z-50   hidden md:flex ">
 
-                        {/* Subcategories Dropdown */}
-                        <div
-                            ref={dropdownRef}
-                            id={`subcategories-${idx}`}
-                            className={`absolute left-0 w-full top-[128px] bg-white text-blue-800 shadow-lg z-20  overflow-hidden transition-all duration-500 ease-in-out transform ${idx ? "max-h-screen" : "max-h-0"
-                                }`}
-                            style={{ height: isOpen ? "auto" : "0" }}
-                        >
-                            <div className="grid grid-cols-4 gap-4 max-w-screen-xl mx-auto py-4 px-6">
-                                {subCategories
-                                    .filter((subCategory) => subCategory.categoryId === idx)
-                                    .map((subCategory) => (
-                                        <a
-                                            key={subCategory.id}
-                                            href="#"
-                                            className="hover:underline text-sm transition-all duration-200 ease-in-out transform hover:bg-blue-100 rounded-md px-2 py-1"
+                    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="flex items-center justify-between h-16">
+
+                            {/* Categories Menu */}
+                            <ul className="flex space-x-8">
+                                {categories.map(({ id, name }) => (
+                                    <li key={id} className="relative group">
+                                        {/* Category Menu Item */}
+                                        <button
+                                            onClick={() => toggleDropdown(id)} // Toggle dropdown for the clicked category
+                                            className={`text-white px-3 py-2 text-sm font-medium ${idx === id ? "underline font-bold" : "hover:bg-blue-700"
+                                                } transition-all duration-200 ease-in-out transform hover:scale-105`}
+                                            aria-expanded={idx === id}
+                                            aria-controls={`subcategories-${id}`}
                                         >
-                                            {subCategory.name}
-                                        </a>
-                                    ))}
+                                            {name}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+
+                            {/* Subcategories Dropdown */}
+                            <div
+                                ref={dropdownRef}
+                                id={`subcategories-${idx}`}
+                                className={`absolute left-0 w-full top-[62px] bg-white text-blue-800 shadow-lg z-20  overflow-hidden transition-all duration-500 ease-in-out transform ${idx ? "max-h-screen" : "max-h-0"
+                                    }`}
+                                style={{ height: isOpen ? "auto" : "0" }}
+                            >
+                                <div className="grid grid-cols-4 gap-4 max-w-screen-xl mx-auto py-4 px-6">
+                                    {subCategories
+                                        .filter((subCategory) => subCategory.categoryId === idx)
+                                        .map((subCategory) => (
+                                            <a
+                                                key={subCategory.id}
+                                                href="#"
+                                                className="hover:underline text-sm transition-all duration-200 ease-in-out transform hover:bg-blue-100 rounded-md px-2 py-1"
+                                            >
+                                                {subCategory.name}
+                                            </a>
+                                        ))}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </Container>
         </div>
     );
 };

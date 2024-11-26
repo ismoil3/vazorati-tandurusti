@@ -146,67 +146,72 @@ export default function Home() {
 
 
   return (
-    <div>
-      
+    <div >
+
       <section className="relative kef bg-cover bg-center min-h-[800px] text-white" style={{ backgroundImage: "url('https://your-image-link.jpg')" }}>
-  <div className="absolute inset-0 bg-black/50"></div>
-  <Container>
-    {/* Header Section */}
-        {/* Left Side - President Card */}
-        <div className="relative top-[20px] m-auto max-w-[500px] p-6 sm:p-8 rounded-[20px] bg-gradient-to-tl from-white/10 to-white/5 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105 border border-white/30">
-        <div className="rounded-lg overflow-hidden border-4 border-white">
-          <img 
-            src="https://maorif.tj/img/president.jpg" 
-            alt="President" 
-            className="w-full h-auto object-cover"
-          />
-        </div>
-        <div className="absolute -top-4 -right-4 bg-[#FFD700] w-12 h-12 rounded-full flex items-center justify-center shadow-md">
-          <span className="text-black text-lg font-bold">VIP</span>
-        </div>
-        <div className="mt-4 sm:mt-6 text-white flex flex-col items-center">
-          <p className="text-center text-lg sm:text-2xl font-extrabold tracking-wide uppercase">
-            ЭМОМАЛӢ РАҲМОН
-          </p>
-          <p className="text-center text-xs sm:text-base font-medium leading-relaxed sm:max-w-[360px] sm:mt-2">
-            АСОСГУЗОРИ СУЛҲУ ВАҲДАТИ МИЛЛӢ - ПЕШВОИ МИЛЛАТ
-          </p>
-        </div>
-      </div>
-
-    {/* Interactive Cards Section */}
-    <div className="relative m-auto z-10 mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-6">
-      {/* Individual Card */}
-      {[
-        { title: "Набзи электронӣ", icon: "💓" },
-        { title: "Тандурустии фавқуллода", icon: "🚑" },
-        { title: "САБИМ", icon: "❤️" },
-        { title: "MHRS", icon: "📅" },
-        { title: "Гирифтани маълумот", icon: "📖" },
-      ].map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center justify-center p-4 bg-white/20 backdrop-blur-lg rounded-lg shadow-lg hover:shadow-xl transition-transform hover:scale-105"
-        >
-          <span className="text-4xl mb-3">{item.icon}</span>
-          <p className="text-sm sm:text-lg font-medium">{item.title}</p>
-        </div>
-      ))}
-    </div>
-  </Container>
-</section>
-
-  
+        <div className="absolute inset-0 bg-black/50"></div>
+        <Container>
+          {/* Header Section */}
+          <div className='flex flex-wrap gap-[40px] relative top-[100] items-center justify-between'>
+            <div className="flex  flex-col sm:flex-row space-y-6 items-center polymorphism bg-gradient-to-r from-[#2D45A9]/50 rounded-[10px] px-4 sm:px-6 py-6 sm:py-[59px] ">
+              <img src="https://maorif.tj/img/big-gerb.png" alt="Gerb" className="w-11 h-9 sm:w-28 sm:h-24" />
+              <p className="text-sm sm:text-2xl font-extrabold text-white sm:max-w-[540px] uppercase">
+                Вазорати тандурустӣ
+                ва ҳифзи иҷтимоии аҳолии
+                Ҷумҳурии Тоҷикистон
+              </p>
+            </div>
+            {/* Left Side - President Card */}
+            <div className="relative top-[20px]  max-w-[420px] p-6 sm:p-8 rounded-[20px] bg-gradient-to-tl from-white/10 to-white/5 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105 border border-white/30">
+              <div className="rounded-lg overflow-hidden border-4 border-white">
+                <img
+                  src="https://maorif.tj/img/president.jpg"
+                  alt="President"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="mt-4 sm:mt-6 text-white flex flex-col items-center">
+                <p className="text-center text-lg sm:text-xl font-extrabold tracking-wide uppercase">
+                  ЭМОМАЛӢ РАҲМОН
+                </p>
+                <p className="text-center text-xs sm:text-base font-medium leading-relaxed sm:max-w-[360px] sm:mt-2">
+                  АСОСГУЗОРИ СУЛҲУ ВАҲДАТИ МИЛЛӢ - ПЕШВОИ МИЛЛАТ
+                </p>
+              </div>
+            </div>
 
 
+          </div>
 
+          {/* Interactive Cards Section */}
+          {/* <div className='max-w-[800px] m-auto mt-[150px]'>
+         <div className="relative m-auto z-10 mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+            {[
+              { title: "Хабарҳо", icon: "🧾" },
+              { title: "Мақолаҳо", icon: "📖" },
+              { title: "Беморхо", icon: "❤️" },
+              { title: "MHRS", icon: "📅" },
+              { title: "Гирифтани маълумот", icon: "📖" },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col max-w-[180px] m-auto w-[100%] max-h-[180px] h-[100%]  items-center justify-center p-4 bg-white/20 backdrop-blur-lg rounded-[3px] shadow-lg hover:shadow-xl transition-transform hover:scale-105"
+              >
+                <span className="text-4xl mb-3">{item.icon}</span>
+                <p className="text-sm sm:text-lg font-medium">{item.title}</p>
+              </div>
+            ))}
+          </div>
+         </div> */}
+        </Container>
+      </section>
 
       <br /><br />
 
       {/* News Section */}
       <Container className="py-10">
         <section>
-          <h1 className="font-[700] text-[30px] mb-[40px] text-[#1F3C88]">Хабарҳо</h1>
+          <h1 className="font-[700] text-[30px] mb-[40px] text-[#1E99A5]">Хабарҳо</h1>
 
           {/* First Swiper */}
           <div className='flex flex-col lg:flex-row gap-[30px] items-center'>
@@ -234,7 +239,7 @@ export default function Home() {
                       src={el.img}
                       className="h-[55%] object-cover w-full rounded-t-[8px] transition-all duration-500 ease-in-out transform hover:scale-105"
                       alt="News image"
-                    /><br/>
+                    /><br />
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-black text-start  via-transparent to-transparent">
                       <div className="px-6 py-4 w-full">
                         <p className="font-bold text-lg mb-4">{el.desc}</p>
@@ -267,7 +272,7 @@ export default function Home() {
             </div>
           </div>
 
-{/* ////////// */}
+          {/* ////////// */}
           <br /><br />
         </section>
 
@@ -279,14 +284,14 @@ export default function Home() {
       <br /><br /><br />
       <section>
         <Container>
-          <h1 className="font-[700] text-[30px] mb-[40px] text-[#1F3C88]">Мақолаҳо</h1>
-          {/* <h1 className="font-[900] text-[40px] mb-[20px] text-[#1F3C88]"></h1> */}
+          <h1 className="font-[700] text-[30px] mb-[40px] text-[#1E99A5]">Мақолаҳо</h1>
+          {/* <h1 className="font-[900] text-[40px] mb-[20px] text-[#1E99A5]"></h1> */}
           <hr />
         </Container>
         <br />
 
 
-      
+
 
 
 
@@ -317,9 +322,9 @@ export default function Home() {
                   {/* Button */}
                   <Button
                     variant="contained"
-                    color="[#1A3992]"
                     className="mt-auto"
                     fullWidth
+                    sx={{ backgroundColor: '#1F9DAA' }}
                   >
                     {el.link}
                   </Button>
@@ -378,7 +383,7 @@ export default function Home() {
       <br /><br /><br />
       <Container>
         <section>
-          <h1 className="font-[900] text-[40px] mb-[20px] text-[#1F3C88]">Мусоҳибаҳо</h1>
+          <h1 className="font-[900] text-[40px] mb-[20px] text-[#1E99A5]">Мусоҳибаҳо</h1>
           <hr />
           <br />
           <div className="py-10 px-4 sm:px-10">
@@ -406,9 +411,9 @@ export default function Home() {
                   {/* Button */}
                   <Button
                     variant="contained"
-                    color="[#1A3992]"
                     className="mt-auto"
                     fullWidth
+                    sx={{ backgroundColor: '#1F9DAA' }}
                   >
                     {el.link}
                   </Button>
@@ -425,7 +430,7 @@ export default function Home() {
         <div className='elementor-widget-wrap elementor-element-populated'>
           <section className="w-full bg-white py-8">
             <div className="container w-full">
-              <h1 className="font-[700] text-[30px] mb-[40px] text-[#1F3C88]">Сомонаҳои мақомоти давлатӣ ва шарикони мо</h1>
+              <h1 className="font-[700] text-[30px] mb-[40px] text-[#1E99A5]">Сомонаҳои мақомоти давлатӣ ва шарикони мо</h1>
             </div>
             <div className="border-t border-gray-300 mx-auto w-1/2"></div>
 
@@ -437,42 +442,42 @@ export default function Home() {
           <div className="splide__track" style={{ paddingLeft: '0px', paddingRight: '0px' }} aria-live="off" aria-atomic="true">
             <ul className="splide__list gap-[30px]" id="splide05-list" role="presentation">
               {/* Slide 1 */}
-              <li className="splide__slide flex items-center py-3 px-5 border border-[#365CDD] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide01" role="group" aria-roledescription="slide" aria-label="1 of 6">
+              <li className="splide__slide flex items-center py-3 px-5 border border-[#1E99A5] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide01" role="group" aria-roledescription="slide" aria-label="1 of 6">
                 <img className="w-[56px] h-[56px]" src="https://maorif.tj/storage/images/01J3JDYZAGCB5TBZ57PXAT6BBY.svg" alt="Logo" />
                 <a href="https://tpp.tj/" className="text-sm line-clamp-4 font-semibold uppercase" tabIndex="-1">
                   ПАЛАТАИ САВДО ВА САНОАТИ ҶУМҲУРИИ ТОҶИКИСТОН
                 </a>
               </li>
               {/* Slide 2 */}
-              <li className="splide__slide flex items-center py-3 px-5 border border-[#365CDD] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide02" role="group" aria-roledescription="slide" aria-label="2 of 6">
+              <li className="splide__slide flex items-center py-3 px-5 border border-[#1E99A5] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide02" role="group" aria-roledescription="slide" aria-label="2 of 6">
                 <img className="w-[56px] h-[56px]" src="https://maorif.tj/storage/images/01J3JDRQN3HF27FHJVA0N96Z3E.png" alt="Logo" />
                 <a href="https://mfa.tj/" className="text-sm line-clamp-4 font-semibold uppercase" tabIndex="-1">
                   Вазорати корҳои хориҷии Ҷумҳурии Тоҷикистон
                 </a>
               </li>
               {/* Slide 3 */}
-              <li className="splide__slide flex items-center py-3 px-5 border border-[#365CDD] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide03" role="group" aria-roledescription="slide" aria-label="3 of 6">
+              <li className="splide__slide flex items-center py-3 px-5 border border-[#1E99A5] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide03" role="group" aria-roledescription="slide" aria-label="3 of 6">
                 <img className="w-[56px] h-[56px]" src="https://maorif.tj/storage/images/01J14MBQJ1CQN8A6SPVNRMR73T.png" alt="Logo" />
                 <a href="https://khovar.tj/rus/" className="text-sm line-clamp-4 font-semibold uppercase" tabIndex="-1">
                   Агентии миллии иттилоотии Тоҷикистон {"Ховар"}
                 </a>
               </li>
               {/* Slide 4 */}
-              <li className="splide__slide flex items-center py-3 px-5 border border-[#365CDD] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide04" role="group" aria-roledescription="slide" aria-label="4 of 6">
+              <li className="splide__slide flex items-center py-3 px-5 border border-[#1E99A5] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide04" role="group" aria-roledescription="slide" aria-label="4 of 6">
                 <img className="w-[56px] h-[56px]" src="https://maorif.tj/storage/images/01J14KNCG73BCQ7SGYTDM3EK7F.png" alt="Logo" />
                 <a href="https://mmk.tj" className="text-sm line-clamp-4 font-semibold uppercase">
                   Маркази миллии қонунгузории назди Президенти Ҷумҳурии Тоҷикистон
                 </a>
               </li>
               {/* Slide 5 */}
-              <li className="splide__slide flex items-center py-3 px-5 border border-[#365CDD] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide05" role="group" aria-roledescription="slide" aria-label="5 of 6">
+              <li className="splide__slide flex items-center py-3 px-5 border border-[#1E99A5] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide05" role="group" aria-roledescription="slide" aria-label="5 of 6">
                 <img className="w-[56px] h-[56px]" src="https://maorif.tj/storage/images/01J14KMG53MR83WVYFQXA2HJ0F.png" alt="Logo" />
                 <a href="http://www.president.tj" className="text-sm line-clamp-4 font-semibold uppercase">
                   Президенти Ҷумҳурии Тоҷикистон
                 </a>
               </li>
               {/* Slide 6 */}
-              <li className="splide__slide flex items-center py-3 px-5 border border-[#365CDD] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide06" role="group" aria-roledescription="slide" aria-label="6 of 6">
+              <li className="splide__slide flex items-center py-3 px-5 border border-[#1E99A5] rounded-2xl bg-white max-w-[330px] gap-2" id="splide05-slide06" role="group" aria-roledescription="slide" aria-label="6 of 6">
                 <img className="w-[56px] h-[56px]" src="https://maorif.tj/storage/images/01J14KKG7DM8DGY2S4P2G1DESR.png" alt="Logo" />
                 <Link href="http://www.president.tj" className="text-sm line-clamp-4 font-semibold uppercase">
                   Мақомоти иҷроияи ҳокимияти давлатии шаҳри Душанбе
@@ -483,80 +488,91 @@ export default function Home() {
         </div>
 
         {/* elon */}
-            <section>
-      <div className="container mt-10 sm:mt-14 md:mt-20 xl:mt-[100px] pb-10 md:pb-0">
-        <div className="flex justify-between items-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold uppercase">
-            Эълон
-          </h2>
-          <Link
-            href="#"
-            className="hidden md:flex text-xl font-medium uppercase text-[#1A3992]"
-          >
-            Бештар
-          </Link>
-        </div>
+        <section>
+          <div className="container mt-10 sm:mt-14 md:mt-20 xl:mt-[100px] pb-10 md:pb-0">
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold uppercase">
+                Эълон
+              </h2>
+              <Link
+                href="#"
+                className="hidden md:flex text-xl font-medium uppercase text-[#1E99A5]"
+              >
+                Бештар
+              </Link>
+            </div>
 
-        <ul className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-[34px]">
-          <li className="bg-white pt-[29px] pl-5 pr-[14px] pb-[18px] rounded-xl">
-            <span className="text-white text-sm py-2 px-7 bg-[#1A3992] rounded-xl">
-              21.11.2024
-            </span>
-            <h3 className="mt-5 text-xl line-clamp-1">
-              Маркази барномаҳои байналмилалӣ барои таҳсили шаҳрвандони Тоҷикистон дар муассисаҳои таҳсилоти олӣ ва илмӣ дар давлатҳои хориҷӣ қабули ҳуҷҷатҳоро эълон намуд
-            </h3>
-            <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
-              Маркази барномаҳои байналмилалӣ барои таҳсили шаҳрвандони Тоҷикистон дар муассисаҳои таҳсилоти олӣ ва илмӣ дар давлатҳои хориҷӣ қабули ҳуҷҷатҳоро эълон намуд
-            </span>
-            <Link
-              href="#"
-              className="text-[#1A3992] mt-6 font-semibold block"
-            >
-              Бештар
-            </Link>
-          </li>
+            <ul className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-[34px]">
+              <li className="bg-white pt-[29px] pl-5 pr-[14px] pb-[18px] rounded-xl">
+                <span className="text-white text-sm py-2 px-7 bg-[#1E99A5] rounded-xl">
+                  21.11.2024
+                </span>
+                <h3 className="mt-5 text-xl line-clamp-1">
+                  Маркази барномаҳои байналмилалӣ барои таҳсили шаҳрвандони Тоҷикистон дар муассисаҳои таҳсилоти олӣ ва илмӣ дар давлатҳои хориҷӣ қабули ҳуҷҷатҳоро эълон намуд
+                </h3>
+                <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
+                  Маркази барномаҳои байналмилалӣ барои таҳсили шаҳрвандони Тоҷикистон дар муассисаҳои таҳсилоти олӣ ва илмӣ дар давлатҳои хориҷӣ қабули ҳуҷҷатҳоро эълон намуд
+                </span>
+                <Link
+                  href="#"
+                  className="text-[#1E99A5] mt-6 font-semibold block"
+                >
+                  Бештар
+                </Link>
+              </li>
 
-          <li className="bg-white pt-[29px] pl-5 pr-[14px] pb-[18px] rounded-xl">
-            <span className="text-white text-sm py-2 px-7 bg-[#1A3992] rounded-xl">
-              19.11.2024
-            </span>
-            <h3 className="mt-5 text-xl line-clamp-1">
-            ДАРХОС БАРОИ ИЗХОРОТИ МАНФИАТХО. МАШВАРАТЧИИ индивидуалй
-            </h3>
-            <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
-            ДАРХОС БАРОИ ИЗХОРОТИ МАНФИАТХО
-            </span>
-            <Link
-              href="#"
-              className="text-[#1A3992] mt-6 font-semibold block"
-            >
-              Бештар
-            </Link>
-          </li>
+              <li className="bg-white pt-[29px] pl-5 pr-[14px] pb-[18px] rounded-xl">
+                <span className="text-white text-sm py-2 px-7 bg-[#1E99A5] rounded-xl">
+                  19.11.2024
+                </span>
+                <h3 className="mt-5 text-xl line-clamp-1">
+                  ДАРХОС БАРОИ ИЗХОРОТИ МАНФИАТХО. МАШВАРАТЧИИ индивидуалй
+                </h3>
+                <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
+                  ДАРХОС БАРОИ ИЗХОРОТИ МАНФИАТХО
+                </span>
+                <Link
+                  href="#"
+                  className="text-[#1E99A5] mt-6 font-semibold block"
+                >
+                  Бештар
+                </Link>
+              </li>
 
-          <li className="bg-white pt-[29px] pl-5 pr-[14px] pb-[18px] rounded-xl">
-            <span className="text-white text-sm py-2 px-7 bg-[#1A3992] rounded-xl">
-              05.11.2024
-            </span>
-            <h3 className="mt-5 text-xl line-clamp-1">
-              ЭЪЛОН!!! Ба диққати масъулон ва довталабони даври чоруми озмуни ҷумҳуриявии{ "Фурӯғи субҳи доноӣ китоб аст"}!
-            </h3>
-            <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
-              ЭЪЛОН!!!
-            </span>
-            <Link
-              href="#"
-              className="text-[#1A3992] mt-6 font-semibold block"
-            >
-              Бештар
-            </Link>
-          </li>
-        </ul>
+              <li className="bg-white pt-[29px] pl-5 pr-[14px] pb-[18px] rounded-xl">
+                <span className="text-white text-sm py-2 px-7 bg-[#1E99A5] rounded-xl">
+                  05.11.2024
+                </span>
+                <h3 className="mt-5 text-xl line-clamp-1">
+                  ЭЪЛОН!!! Ба диққати масъулон ва довталабони даври чоруми озмуни ҷумҳуриявии{"Фурӯғи субҳи доноӣ китоб аст"}!
+                </h3>
+                <span className="line-clamp-2 leading-5 mt-2 text-gray-500">
+                  ЭЪЛОН!!!
+                </span>
+                <Link
+                  href="#"
+                  className="text-[#1E99A5] mt-6 font-semibold block"
+                >
+                  Бештар
+                </Link>
+              </li>
+            </ul>
 
-       
-      </div>
-    </section>
-      </Container>
+
+          </div>
+        </section>
+        <br /><br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d779.8743071751752!2d68.78183026961064!3d38.56839609823727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d168a2a80239%3A0xb2a631fa9594ee18!2z0JzQuNC90LfQtNGA0LDQsg!5e0!3m2!1sru!2s!4v1732617030088!5m2!1sru!2s"
+          className='w-full'
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+
+      </Container><br /><br />
     </div>
   );
 }
