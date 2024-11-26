@@ -152,7 +152,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50"></div>
         <Container>
           {/* Header Section */}
-          <div className='flex flex-wrap gap-[40px] relative top-[100] items-center justify-between'>
+          <div className='flex flex-wrap gap-[40px] relative top-[100px] items-center justify-between'>
             <div className="flex  flex-col sm:flex-row space-y-6 items-center polymorphism bg-gradient-to-r from-[#2D45A9]/50 rounded-[10px] px-4 sm:px-6 py-6 sm:py-[59px] ">
               <img src="https://maorif.tj/img/big-gerb.png" alt="Gerb" className="w-11 h-9 sm:w-28 sm:h-24" />
               <p className="text-sm sm:text-2xl font-extrabold text-white sm:max-w-[540px] uppercase">
@@ -162,7 +162,7 @@ export default function Home() {
               </p>
             </div>
             {/* Left Side - President Card */}
-            <div className="relative top-[20px]  max-w-[420px] p-6 sm:p-8 rounded-[20px] bg-gradient-to-tl from-white/10 to-white/5 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105 border border-white/30">
+            <div className="relative mt-[20px] max-w-[420px] p-6 sm:p-8 rounded-[20px] bg-gradient-to-tl from-white/10 to-white/5 backdrop-blur-xl shadow-xl hover:shadow-2xl transition-transform duration-300 hover:scale-105 border border-white/30">
               <div className="rounded-lg overflow-hidden border-4 border-white">
                 <img
                   src="https://maorif.tj/img/president.jpg"
