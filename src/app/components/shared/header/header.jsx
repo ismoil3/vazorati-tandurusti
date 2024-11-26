@@ -83,8 +83,10 @@ const Header = () => {
 
     return (
         <div>
-
-            <Container>
+   
+   <div className="bg-[#1F9DAA] text-[white]">
+    
+   <Container>
                 <div className=" flex justify-between items-center py-0 container z-10">
                     <ul className="flex">
                         {/* Герб Modal Trigger */}
@@ -117,11 +119,11 @@ const Header = () => {
                     <div className="flex gap-4 items-center">
                         {/* Phone Number */}
                         <a
-                            className="text-[#25ABB9] text-base gap-1 items-center hidden lg:flex"
+                            className="text-[#ffff] text-base gap-1 items-center hidden lg:flex"
                             href="tel:+9922277686"
                         >
                             <PhoneIcon fontSize="small" />
-                            <span>+992-227-76-86</span>
+                            <span className="text-[white]">+992-227-76-86</span>
                         </a>
 
                         {/* Social Media Links */}
@@ -246,6 +248,7 @@ const Header = () => {
                     )}
                 </div>
             </Container>
+   </div>
 
             <Container>
                 <nav className="bg-transparent items-center top-[50px]  absolute justify-center   z-50   hidden md:flex ">
