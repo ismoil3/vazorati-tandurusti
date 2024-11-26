@@ -49,13 +49,13 @@ export default function Home() {
       id: '2',
       img: 'https://www.imoge.tj/media/k2/items/cache/661821a9442a8dbd824e89bd18c0fd2e_XL.jpg',
       desc: 'Паёми Президенти Ҷумҳурии Тоҷикистон, Пешвои Миллат',
-      date: '1 ноябри 2024'
+      date: '2 ноябри 2024'
     },
     {
       id: '3',
       img: 'https://lh6.googleusercontent.com/proxy/GHBAVpI-b0J2CwFOef8ZjeMA_JvU07vRbWjjH2Lt11HJby7VJ8SOqtFg5LeVP85FaA96Als4iET49Fx4KRyBgNEFAyTO6RMsYdJeu43IkYsW7JKCkcn9mJqAdx6ZUZvMCoj7OuMiCryPjD1jFg',
       desc: 'Президенти Ҷумҳурии Тоҷикистон, муҳтарам Эмомалӣ Раҳмон, Раиси муваққати... гирифт',
-      date: '1 ноябри 2024'
+      date: '3 ноябри 2024'
     },
     {
       id: '4',
@@ -153,7 +153,7 @@ export default function Home() {
         <Container>
           {/* Header Section */}
           <div className='flex flex-wrap gap-[40px] relative top-[100px] items-center justify-between'>
-            <div className="flex  flex-col sm:flex-row space-y-6 items-center polymorphism bg-gradient-to-r from-[#2D45A9]/50 rounded-[10px] px-4 sm:px-6 py-6 sm:py-[59px] ">
+            <div className="flex  flex-col sm:flex-row space-y-6 items-center polymorphism bg-gradient-to-r from-[#1D94A0]/50 rounded-[10px] px-4 sm:px-6 py-6 sm:py-[59px] ">
               <img src="https://maorif.tj/img/big-gerb.png" alt="Gerb" className="w-11 h-9 sm:w-28 sm:h-24" />
               <p className="text-sm sm:text-2xl font-extrabold text-white sm:max-w-[540px] uppercase">
                 Вазорати тандурустӣ

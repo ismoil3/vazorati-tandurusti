@@ -119,11 +119,11 @@ const Header = () => {
                     <div className="flex gap-4 items-center">
                         {/* Phone Number */}
                         <a
-                            className="text-[#ffff] text-base gap-1 items-center hidden lg:flex"
+                            className="text-[#fff] text-base gap-1 items-center hidden lg:flex"
                             href="tel:+9922277686"
                         >
                             <PhoneIcon fontSize="small" />
-                            <span className="text-[white]">+992-227-76-86</span>
+                            <span>+992-227-76-86</span>
                         </a>
 
                         {/* Social Media Links */}
